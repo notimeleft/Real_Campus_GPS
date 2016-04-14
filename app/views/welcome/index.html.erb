@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+
+<body>
+	<nav class="navbar navbar-default" style="margin-bottom: 0">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#" style="font-size: 30px">Welcome to Campus GPS</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<form class="navbar-form navbar-left" role="search" action="/welcome/index" id="input_form">
+				<div class="form-group">
+          <datalist id = "building_list">
+            <select>
+              <%= Building.all.order(:name).each do |b| %>
+              <option><%=b.name%></option>
+              <%end%>
+            </select>
+          </datalist>
+					<input name="start" type="text" class="form-control" placeholder="Start Location" list="building_list">
+					<input name="end" type="text" class="form-control" placeholder="Destination" list="building_list">
+				</div>
+        <button type="submit" class="btn" form="input_form">Search</button>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a style="font-size: 25px">email: <%= User.current_user.email %></a></li>
+				<li><a href="/sessions/destroy" style="font-size: 25px"><b>Log Out</b></a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+	</nav>
+
+<%=render 'form', :result => @result%>
+
+</body>
