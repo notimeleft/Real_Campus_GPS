@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Demo</title>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 </head>
 
 
@@ -42,8 +42,12 @@
         <button type="submit" class="btn" form="input_form">Search</button>
 			</form>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a style="font-size: 25px">email: <%= User.current_user.email %></a></li>
-				<li><a href="/sessions/destroy" style="font-size: 25px"><b>Log Out</b></a></li>
+				<li class="dropdown">
+          <a class="dropdown-toggle" role="button" data-toggle="dropdown"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">page1</a></li>
+          </ul>
+        </li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
