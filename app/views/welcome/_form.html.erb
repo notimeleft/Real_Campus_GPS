@@ -8,10 +8,24 @@
   <div id="map" style='width: 100%; height: 100%;'></div>
 </div>
 
+<!-- //  handler.getMap().setZoom(15);
+//  handler.getMap().setCenter(new google.maps.LatLng(42.366426, -71.258601)); -->
+
 <script type="text/javascript">
   var anumber = 1
+  var southWest = new google.maps.LatLng( 42.361897, -71.266080 );
+  var northEast = new google.maps.LatLng( 42.370926, -71.250255 );
+  var hyderabadBounds = new google.maps.LatLngBounds( southWest, northEast );
+  var mapOptions = {
+    center: new google.maps.LatLng(42.366426, -71.258601),
+    maxZoom:18,
+    minZoom:16,
+    bounds: hyderabadBounds,
+    scrollwheel: true,
+    zoomControl: true
+  };
   var handler = Gmaps.build('Google');
-     handler.buildMap({ internal: {id: 'map'}}, function(){
+     handler.buildMap({ provider: mapOptions, internal: {id: 'map'}}, function(){
        var plan = <%= raw @result %>;
        plan.options = {
          geodesic: true,
@@ -30,15 +44,16 @@
          handler.bounds.extend(transformedPolyline[0]);
          handler.bounds.extend(polyline[ polyline.length - 1]);
        }
-       
+
        if(navigator.geolocation)
           navigator.geolocation.getCurrentPosition(displayOnMap,function error(msg){alert('Please enable your GPS position future.');
 }, {maximumAge:600000, timeout:8000, enableHighAccuracy: true});
 
        addPolyline(plan);
        handler.fitMapToBounds();
+       handler.getMap().setZoom(17);
      });
-     
+
      function displayOnMap(position){
        var marker = handler.addMarker({
          lat: position.coords.latitude,
