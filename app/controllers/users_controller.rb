@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 	#skip_before_filter :authorize, only: [:create, :new]
 	skip_before_filter :authorize, only: [:create, :new, :show, :edit, :update, :destroy]
+	skip_before_filter :verify_authenticity_token
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -16,7 +17,7 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
-    @user = User.new
+		@user=User.new
   end
 
   # GET /users/1/edit
@@ -74,6 +75,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation)
+      params.permit(:name, :email, :password, :password_confirmation)
     end
 end
