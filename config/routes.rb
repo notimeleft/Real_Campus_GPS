@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   post 'sessions/new' => 'sessions#create'
   get 'welcome/index'
 
-  post 'users/create'
+  post 'users/create' => 'users#create'
 
   #get 'member/:id' => 'members#show'
 
