@@ -8,6 +8,21 @@
   <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+	<script src="/assets/welcome/modernizr.custom.95515.js"></script>
+	<script>
+			if (!Modernizr.datalistelem) {
+				alert('This browser does not support HTML5 datalist element, so we will load the polyfills');
+			}
+			yepnope([
+            '/assets/jquery-1.12.0.min.js.erb',
+            {
+                test : Modernizr.input.list,
+                nope : ['https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css',
+                        'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js',
+                        '/assets/welcome/DatalistPolyfill.js']
+            }
+        ]);
+	</script>
 </head>
 
 
@@ -22,7 +37,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#" style="font-size: 30px">Welcome to Campus GPS</a>
+			<a class="navbar-brand" href="#" style="font-size: 30px">Brandeis Campus GPS</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -30,11 +45,9 @@
 			<form class="navbar-form navbar-left" role="search" action="/welcome/index" id="input_form">
 				<div class="form-group">
           <datalist id = "building_list">
-            <select>
               <%= Building.all.order(:name).each do |b| %>
-              <option><%=b.name%></option>
+              	<option value="<%=b.name%>">
               <%end%>
-            </select>
           </datalist>
 					<input name="start" type="text" class="form-control" placeholder="Start Location" list="building_list">
 					<input name="end" type="text" class="form-control" placeholder="Destination" list="building_list">
