@@ -12,17 +12,18 @@
 //  handler.getMap().setCenter(new google.maps.LatLng(42.366426, -71.258601)); -->
 
 <script type="text/javascript">
+
   var anumber = 1
-  var southWest = new google.maps.LatLng( 42.361897, -71.266080 );
-  var northEast = new google.maps.LatLng( 42.370926, -71.250255 );
+  var southWest = new google.maps.LatLng( 42.358631, -71.277989 );
+  var northEast = new google.maps.LatLng( 42.373986, -71.243614 );
   var hyderabadBounds = new google.maps.LatLngBounds( southWest, northEast );
   var mapOptions = {
     center: new google.maps.LatLng(42.366426, -71.258601),
     maxZoom:18,
     minZoom:16,
-    bounds: hyderabadBounds,
-    scrollwheel: true,
-    zoomControl: true
+    maxBounds: hyderabadBounds
+    //scrollwheel: false,
+    //zoomControl: false
   };
   var handler = Gmaps.build('Google');
      handler.buildMap({ provider: mapOptions, internal: {id: 'map'}}, function(){
@@ -35,7 +36,6 @@
          title: 'plan'
        };
 
-
        function addPolyline(polyline){
          var transformedPolyline = _.map(polyline, function(coordinates){
            return { lat: coordinates[0], lng: coordinates[1] };
@@ -43,6 +43,7 @@
          handler.addPolyline(transformedPolyline, polyline.options);
          handler.bounds.extend(transformedPolyline[0]);
          handler.bounds.extend(polyline[ polyline.length - 1]);
+         handler.map.centerOn(map.getCenter());
        }
 
        if(navigator.geolocation)
@@ -51,15 +52,24 @@
 
        addPolyline(plan);
        handler.fitMapToBounds();
+       handler.map.fitBounds(map.getMaxZoom);
        handler.getMap().setZoom(17);
+
+       //handler.fitBounds(new google.maps.LatLngBounds( new google.maps.LatLng( 42.361897, -71.266080 ), new google.maps.LatLng( 42.370926, -71.250255 ) ));
      });
+
+      google.maps.event.addListener(handler.getMap(), 'dragend',  function( evt ) {
+        if (hyderabadBounds.contains(handler.getMap().getCenter())) return;
+        handler.map.centerOn(new google.maps.LatLng(42.366426, -71.258601));
+          //alert("hello!");
+      });
 
      function displayOnMap(position){
        var marker = handler.addMarker({
          lat: position.coords.latitude,
          lng: position.coords.longitude
        });
-       handler.map.centerOn(marker);
+       //handler.map.centerOn(marker);
      };
 </script>
 </body>
