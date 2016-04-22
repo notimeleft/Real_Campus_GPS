@@ -1,7 +1,7 @@
 require './lib/map.rb'
 
 class WelcomeController < ApplicationController
-	before_filter :authorize
+	#before_filter :authorize
 
   def index
 		#if @user.Home_Node
