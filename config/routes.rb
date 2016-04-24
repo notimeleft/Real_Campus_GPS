@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get 'sessions/destroy'
 
+  get 'users/new'
+
   post 'sessions/new' => 'sessions#create'
   get 'welcome/index'
 
@@ -24,7 +26,7 @@ Rails.application.routes.draw do
 
   #get 'member/:id' => 'members#show'
 
-  root 'sessions#new'
+  root 'welcome#index'
   #root 'welcome#index'
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
