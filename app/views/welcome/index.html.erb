@@ -55,9 +55,10 @@
           <ul class="dropdown-menu">
             <%=content_tag(:li, role:"presentation"){
                 if !(User.current_user.nil?)
-                  link_to(User.current_user.name, users_path)
+                  link_to(User.current_user.name, users_path, style:"font-style: italic")
                 else
-                  link_to("guest", "#")
+                  content_tag(:a, "Guest", style:"font-style: italic")
+                  # link_to("guest", "#")
                 end
               }
             %>
@@ -79,11 +80,11 @@
               }
             %>
              <li role="presentation" class="divider"></li>
-            <%=content_tag(:li, role:"presentation", class:("disabled" if User.current_user.nil?)){
+            <%=content_tag(:li, role:"presentation"){
                if !(User.current_user.nil?)
                  link_to('Log Out', sessions_destroy_url)
                else
-                 link_to("Log Out", "#")
+                 link_to("More Options", "#")
                end
              }
             %>
