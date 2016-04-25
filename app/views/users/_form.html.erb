@@ -5,6 +5,12 @@
 	<%= javascript_include_tag 'bootstrap.min'%>
 	<%= javascript_include_tag 'jquery.backstretch.min'%>
 	<%= javascript_include_tag 'scripts'%>
+	<script>
+		$.backstretch(["<%= image_url('back.jpg') %>",
+										"<%= image_url('back1.jpg') %>",
+										"<%= image_url('back2.jpg') %>"], {duration: 3000, fade: 750});
+
+	</script>
 </head>
 
 <body>
@@ -50,9 +56,6 @@
 										<input type="password" name="password_confirmation" style="height:50px" placeholder="Password Confirmation" class="form-passwordconfirmation form-control" id="form-passwordconfirmation">
 									</div>
 									<button type="submit" class="btn" style="height:50px">Create</button>
-								</form>
-								<form action="/sessions/new">
-									<button type="submit" class="btn" id="signup_button" style="height:50px">Back to login</button>
 								</form>
 								<form action="/welcome/index">
 									<button type="submit" class="btn" id="map_button" style="height:50px">Back to Map</button>
