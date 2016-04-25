@@ -6145,3 +6145,1044 @@ Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 15:08:14 -0400
 
 
 Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 15:08:14 -0400
+
+
+Started GET "/welcome/index?start=cable&end=bethlehem+chapel" for 127.0.0.1 at 2016-04-25 15:11:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (18.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"cable", "end"=>"bethlehem chapel"}
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (1.9ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  [1m[36mBuilding Load (0.1ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'cable'[0m
+  [1m[35mBuilding Load (0.1ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'bethlehem chapel'
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1032]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 342]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 133]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 132]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 123]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 122]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 121]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 125]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 130]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 129]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 144]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 327]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 143]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 131]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 112]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 314]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1006]]
+  Rendered welcome/_form.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 723ms (Views: 617.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 15:11:06 -0400
+
+
+Started GET "/welcome/index?start=cable&end=bethlehem+chapel" for 127.0.0.1 at 2016-04-25 15:15:29 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"cable", "end"=>"bethlehem chapel"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC
+  [1m[36m (2.2ms)[0m  [1mSELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"[0m
+  [1m[35mBuilding Load (3.5ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'cable'
+  [1m[36mBuilding Load (0.1ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'bethlehem chapel'[0m
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1032]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 342]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 133]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 132]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 123]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 122]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 121]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 125]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 130]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 129]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 144]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 327]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 143]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 131]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 112]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 314]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1006]]
+  Rendered welcome/_form.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 505ms (Views: 432.9ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 15:15:30 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 15:15:31 -0400
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 15:15:31 -0400
+
+
+Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 15:15:31 -0400
+
+
+Started GET "/welcome/index?start=ibs&end=usdan" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"ibs", "end"=>"usdan"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (0.8ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  [1m[36mBuilding Load (0.4ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'ibs'[0m
+  [1m[35mBuilding Load (0.2ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'usdan'
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1023]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 332]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 331]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 108]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 109]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 77]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 78]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 82]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 79]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 96]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 63]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 62]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 60]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 59]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 57]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 318]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 56]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 55]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 102]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 103]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 364]]
+  [1m[36mNode Load (16.8ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1055]]
+  Rendered welcome/_form.html.erb (0.2ms)
+  Rendered welcome/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 456ms (Views: 378.0ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:45 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 15:15:46 -0400
+
+
+Started GET "/welcome/index?start=ibs&end=usdan" for 127.0.0.1 at 2016-04-25 15:31:42 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"ibs", "end"=>"usdan"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (0.8ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  [1m[36mBuilding Load (0.3ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'ibs'[0m
+  [1m[35mBuilding Load (0.2ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'usdan'
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1023]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 332]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 331]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 108]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 109]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 77]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 78]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 82]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 79]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 96]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 63]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 62]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 60]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 59]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 57]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 318]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 56]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 55]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 102]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 103]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 364]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1055]]
+  Rendered welcome/_form.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 611ms (Views: 538.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 15:31:43 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 15:31:44 -0400
+
+
+Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 15:31:44 -0400
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 15:31:44 -0400
+
+
+Started GET "/welcome/index?start=ibs&end=usdan" for 127.0.0.1 at 2016-04-25 15:31:59 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"ibs", "end"=>"usdan"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (6.2ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  [1m[36mBuilding Load (7.8ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'ibs'[0m
+  [1m[35mBuilding Load (0.1ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'usdan'
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1023]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 332]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 331]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 108]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 109]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 77]]
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 78]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 82]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 79]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 96]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 63]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 62]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 60]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 59]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 57]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 318]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 56]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 55]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 102]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 103]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 364]]
+  [1m[36mNode Load (0.6ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1055]]
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 595ms (Views: 512.2ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 15:32:00 -0400
+
+
+Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 15:32:00 -0400

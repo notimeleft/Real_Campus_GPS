@@ -79,13 +79,30 @@
         map: handler.getMap()
       });
       if(plan.length > 1){
-        var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+        var infowindow =  new google.maps.InfoWindow({
+   	     content: 'Destination',
+   	     map: handler.getMap()
+        });
+        var infowindow_start =  new google.maps.InfoWindow({
+   	     content: 'Start',
+   	     map: handler.getMap()
+        });
+        var image_end = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+        var image_start = 'https://mt.googleapis.com/vt/icon/name=icons/onion/22-blue-dot.png&scale=1.0';
+        var start_point = new google.maps.Marker({
+          position: listOfCoordinates[0],
+          map: handler.getMap(),
+          icon: image_start,
+          animation: google.maps.Animation.DROP
+        });
         var final_point = new google.maps.Marker({
           position: listOfCoordinates[plan.length-1],
           map: handler.getMap(),
-          icon: image,
+          icon: image_end,
           animation: google.maps.Animation.DROP
         });
+        infowindow_start.open(handler.getMap(), start_point);
+        infowindow.open(handler.getMap(), final_point);
       }
       animateCircle(line);
     };
