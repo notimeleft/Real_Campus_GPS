@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   post 'sessions/new' => 'sessions#create'
   get 'welcome/index'
+  get 'welcome/find_path'
 
   post 'users/create' => 'users#create'
 
@@ -27,6 +28,14 @@ Rails.application.routes.draw do
   root 'sessions#new'
   #root 'welcome#index'
   resources :users
+
+  resources :welcome do
+    collection do
+      get 'index'
+      get 'find_path'
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
