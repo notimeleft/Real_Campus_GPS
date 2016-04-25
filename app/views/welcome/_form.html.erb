@@ -32,7 +32,36 @@
       //scrollwheel: false,
       //zoomControl: false
     };
-    function drawLine(){
+    var markers = [];
+    var plan = <%= raw @result %>;
+    var listOfCoordinates = []
+    for (i = 0; i < plan.length; i++) {
+      listOfCoordinates.push(new google.maps.LatLng(plan[i][0], plan[i][1]));
+    }
+
+    function drop() {
+      clearMarkers();
+      for (var i = 0; i < listOfCoordinates.length; i++) {
+        addMarkerWithTimeout(listOfCoordinates[i], i * 200);
+      }
+    }
+    function addMarkerWithTimeout(position, timeout) {
+      window.setTimeout(function() {
+        markers.push(new google.maps.Marker({
+          position: position,
+          map: handler.getMap(),
+          animation: google.maps.Animation.DROP
+        }));
+      }, timeout);
+    }
+    function clearMarkers() {
+      for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(null);
+      }
+      markers = [];
+    }
+
+    function drawLine(plan, listOfCoordinates){
       var lineSymbol = {
         path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
         scale: 4,
@@ -40,11 +69,6 @@
         fillColor: '#00FF00',
         fillOpacity: 1.0
       };
-      var plan = <%= raw @result %>;
-      var listOfCoordinates = []
-      for (i = 0; i < plan.length; i++) {
-        listOfCoordinates.push(new google.maps.LatLng(plan[i][0], plan[i][1]));
-      }
       var line = new google.maps.Polyline({
         path: listOfCoordinates,
         strokeColor: '#FF0000',
@@ -54,12 +78,39 @@
         }],
         map: handler.getMap()
       });
+      if(plan.length > 1){
+        var infowindow =  new google.maps.InfoWindow({
+   	     content: 'Destination',
+   	     map: handler.getMap()
+        });
+        var infowindow_start =  new google.maps.InfoWindow({
+   	     content: 'Start',
+   	     map: handler.getMap()
+        });
+        var image_end = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+        var image_start = 'https://mt.googleapis.com/vt/icon/name=icons/onion/22-blue-dot.png&scale=1.0';
+        var start_point = new google.maps.Marker({
+          position: listOfCoordinates[0],
+          map: handler.getMap(),
+          icon: image_start,
+          animation: google.maps.Animation.DROP
+        });
+        var final_point = new google.maps.Marker({
+          position: listOfCoordinates[plan.length-1],
+          map: handler.getMap(),
+          icon: image_end,
+          animation: google.maps.Animation.DROP
+        });
+        infowindow_start.open(handler.getMap(), start_point);
+        infowindow.open(handler.getMap(), final_point);
+      }
       animateCircle(line);
     };
 
      var handler = Gmaps.build('Google');
      handler.buildMap({ provider: mapOptions, internal: {id: 'map'}}, function(){
-       drawLine();
+       //drop();
+       drawLine(plan, listOfCoordinates);
 
        if(navigator.geolocation)
           navigator.geolocation.getCurrentPosition(displayOnMap,function error(msg){alert('Please enable your GPS position future.');
@@ -75,15 +126,18 @@
       });
 
      function displayOnMap(position){
+       var lat = position.coords.latitude;
+       var lng = position.coords.longitude;
        var infowindow =  new google.maps.InfoWindow({
   	     content: 'You are here!',
   	     map: handler.getMap()
        });
-       var marker = handler.addMarker({
-         lat: position.coords.latitude,
-         lng: position.coords.longitude
+       var marker = new google.maps.Marker({
+         position: new google.maps.LatLng(lat, lng),
+         map: handler.getMap(),
+         animation: google.maps.Animation.DROP
        });
-       infowindow.open(handler.getMap(), marker.serviceObject);
+       infowindow.open(handler.getMap(), marker);//marker.serviceObject
        //handler.map.centerOn(marker);
      };
 
