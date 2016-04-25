@@ -5,7 +5,6 @@ class WelcomeController < ApplicationController
 
   def index
 		#if @user.Home_Node
-
 		map = CampusMap.new()
 		@result = [[42.365965, -71.25981]]
     name_list = Building.order(:name).pluck(:id, :name)
@@ -15,7 +14,7 @@ class WelcomeController < ApplicationController
     name_list.sort_by{|id, name| name}.each do |id, name|
       @notes[name] = name
     end
-    if params[:start] != nil && params[:end] != nil && params[:start] != '<option value=' && params[:end] != '<option value='
+		if params[:start] != nil && params[:end] != nil && params[:start] != '<option value=' && params[:end] != '<option value='
 			@result = []
 			start_id = (Building.where(name: params[:start]))[0].id.to_i
 			end_id = (Building.where(name: params[:end]))[0].id.to_i
