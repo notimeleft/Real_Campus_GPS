@@ -54,6 +54,12 @@
         }],
         map: handler.getMap()
       });
+      var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+      var final_point = new google.maps.Marker({
+        position: listOfCoordinates[plan.length-1],
+        map: handler.getMap(),
+        icon: image
+      });
       animateCircle(line);
     };
 
