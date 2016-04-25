@@ -60,29 +60,11 @@
      var handler = Gmaps.build('Google');
      handler.buildMap({ provider: mapOptions, internal: {id: 'map'}}, function(){
        drawLine();
-      //  plan.options = {
-      //    geodesic: true,
-      //    strokeColor: '#FF0000',
-      //    strokeOpacity: 1.0,
-      //    strokeWeight: 4,
-      //    title: 'plan'
-      //  };
-
-      //  function addPolyline(polyline){
-      //    var transformedPolyline = _.map(polyline, function(coordinates){
-      //      return { lat: coordinates[0], lng: coordinates[1] };
-      //    })
-      //    handler.addPolyline(transformedPolyline, polyline.options);
-      //    handler.bounds.extend(transformedPolyline[0]);
-      //    handler.bounds.extend(polyline[ polyline.length - 1]);
-      //    //handler.map.centerOn(new google.maps.LatLng(42.366426, -71.258601));
-      //  }
 
        if(navigator.geolocation)
           navigator.geolocation.getCurrentPosition(displayOnMap,function error(msg){alert('Please enable your GPS position future.');
           }, {maximumAge:600000, timeout:8000, enableHighAccuracy: true});
 
-       //addPolyline(plan);
        handler.fitMapToBounds();
      });
 

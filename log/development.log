@@ -89513,3 +89513,3257 @@ Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-24 19:11:29 -0400
 
 Started GET "/assets/jquery-1.12.0.min.js.erb" for 127.0.0.1 at 2016-04-24 19:11:29 -0400
 >>>>>>> e933e3583050cf76358da2baffcf789749ed73f7
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-25 13:23:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1
+  [1m[36m (51.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (88.5ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  Rendered welcome/_form.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 5321ms (Views: 4493.4ms | ActiveRecord: 140.8ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:06 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:24:10 -0400
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 13:24:10 -0400
+
+
+Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 13:24:10 -0400
+
+
+Started GET "/?start=cable&end=usen+castle" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"cable", "end"=>"usen castle"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC
+  [1m[36m (0.8ms)[0m  [1mSELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"[0m
+  [1m[35mBuilding Load (0.2ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'cable'
+  [1m[36mBuilding Load (0.1ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'usen castle'[0m
+  [1m[35mNode Load (11.6ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1032]]
+  [1m[36mNode Load (0.8ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 342]]
+  [1m[35mNode Load (0.5ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 133]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 132]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 366]]
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 46]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 45]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 365]]
+  [1m[35mNode Load (1.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1056]]
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 411ms (Views: 276.2ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:24:20 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:24:21 -0400
+
+
+Started GET "/?start=ibs&end=library" for 127.0.0.1 at 2016-04-25 13:24:28 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"ibs", "end"=>"library"}
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC
+  [1m[36m (0.8ms)[0m  [1mSELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"[0m
+  [1m[35mBuilding Load (0.3ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'ibs'
+  [1m[36mBuilding Load (0.4ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'library'[0m
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1023]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 332]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 331]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 108]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 109]]
+  [1m[36mNode Load (19.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 77]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 78]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 82]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 79]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 80]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 96]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 63]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 62]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 60]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 59]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 57]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 318]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 319]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1013]]
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 665ms (Views: 589.8ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:24:29 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:24:30 -0400
+
+
+Started GET "/sessions/destroy" for 127.0.0.1 at 2016-04-25 13:24:49 -0400
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/index
+Completed 302 Found in 12ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2016-04-25 13:24:49 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-25 13:24:49 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (1.4ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  Rendered welcome/_form.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 724ms (Views: 692.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:24:50 -0400
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-04-25 13:25:01 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (57.2ms)
+Completed 200 OK in 463ms (Views: 461.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:02 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:02 -0400
+
+
+Started GET "/javascripts/jquery-1.11.1.min.js" for 127.0.0.1 at 2016-04-25 13:25:03 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery-1.11.1.min.js"):
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (194.2ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (361.2ms)
+
+
+Started GET "/sessions/create?name=heihei&password=[FILTERED]" for 127.0.0.1 at 2016-04-25 13:25:29 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"name"=>"heihei", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."name" = 'heihei' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/welcome/index
+Completed 302 Found in 265ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2016-04-25 13:25:29 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (0.7ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  Rendered welcome/_form.html.erb (0.0ms)
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 498ms (Views: 469.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:30 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:25:31 -0400
+
+
+Started GET "/welcome/index?start=admissions&end=abelson" for 127.0.0.1 at 2016-04-25 13:25:42 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"admissions", "end"=>"abelson"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC
+  [1m[36m (1.0ms)[0m  [1mSELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"[0m
+  [1m[35mBuilding Load (0.3ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'admissions'
+  [1m[36mBuilding Load (0.2ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'abelson'[0m
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1008]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 303]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 23]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 22]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 76]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 74]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 73]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 72]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 71]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 70]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 312]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1001]]
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 352ms (Views: 288.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:25:43 -0400
+
+
+Started GET "/welcome/index?start=shapiro&end=library" for 127.0.0.1 at 2016-04-25 13:27:04 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"shapiro", "end"=>"library"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC
+  [1m[36m (0.8ms)[0m  [1mSELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"[0m
+  [1m[35mBuilding Load (0.2ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'shapiro'
+  [1m[36mBuilding Load (0.1ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'library'[0m
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1030]]
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 340]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 87]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 93]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 94]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 95]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 96]]
+  [1m[36mNode Load (0.9ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 63]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 62]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 60]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 59]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 57]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 318]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 319]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1013]]
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 439ms (Views: 399.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:27:05 -0400
+
+
+Started GET "/sessions/destroy" for 127.0.0.1 at 2016-04-25 13:28:14 -0400
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/index
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2016-04-25 13:28:14 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-25 13:28:14 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (8.7ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  Rendered welcome/_form.html.erb (0.0ms)
+  Rendered welcome/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 399ms (Views: 369.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:28:14 -0400
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-04-25 13:28:18 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 308ms (Views: 304.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/javascripts/jquery-1.11.1.min.js" for 127.0.0.1 at 2016-04-25 13:28:19 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery-1.11.1.min.js"):
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (94.5ms)
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:19 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:19 -0400
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-04-25 13:28:27 -0400
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered users/_form.html.erb (525.9ms)
+  Rendered users/new.html.erb within layouts/application (564.5ms)
+Completed 200 OK in 788ms (Views: 782.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+
+Started GET "/javascripts/jquery-1.11.1.min.js" for 127.0.0.1 at 2016-04-25 13:28:28 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery-1.11.1.min.js"):
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.6ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:29 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:29 -0400
+
+
+Started GET "/javascripts/jquery-1.11.1.min.js" for 127.0.0.1 at 2016-04-25 13:28:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery-1.11.1.min.js"):
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.3ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:29 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:29 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:28:29 -0400
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (141.1ms)
+Completed 200 OK in 352ms (Views: 351.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+
+Started GET "/javascripts/jquery-1.11.1.min.js" for 127.0.0.1 at 2016-04-25 13:28:56 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery-1.11.1.min.js"):
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.3ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:57 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:28:57 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:28:57 -0400
+
+
+Started GET "/sessions/create?name=heihei&password=[FILTERED]" for 127.0.0.1 at 2016-04-25 13:29:04 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"name"=>"heihei", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (3.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."name" = 'heihei' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/welcome/index
+Completed 302 Found in 141ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2016-04-25 13:29:04 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (0.9ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 665ms (Views: 633.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:05 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:29:06 -0400
+
+
+Started GET "/welcome/index?start=abelson&end=golding" for 127.0.0.1 at 2016-04-25 13:29:11 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"abelson", "end"=>"golding"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC
+  [1m[36m (0.8ms)[0m  [1mSELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"[0m
+  [1m[35mBuilding Load (0.2ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'abelson'
+  [1m[36mBuilding Load (0.1ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'golding'[0m
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1001]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 312]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 311]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 69]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mNode Load (0.8ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 64]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 98]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 62]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 60]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 59]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 57]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 318]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 56]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 104]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 119]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 120]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 125]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 128]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 350]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 145]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 359]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 140]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 139]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 322]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 1016]]
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 303ms (Views: 265.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:29:12 -0400
+
+
+Started GET "/sessions/destroy" for 127.0.0.1 at 2016-04-25 13:32:01 -0400
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/index
+Completed 302 Found in 6ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2016-04-25 13:32:01 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-25 13:32:01 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (0.9ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  Rendered welcome/_form.html.erb (0.0ms)
+  Rendered welcome/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 961ms (Views: 896.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:32:03 -0400
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-04-25 13:32:10 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (85.4ms)
+Completed 200 OK in 567ms (Views: 563.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/javascripts/jquery-1.11.1.min.js" for 127.0.0.1 at 2016-04-25 13:32:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery-1.11.1.min.js"):
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.2ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (113.4ms)
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:11 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:11 -0400
+
+
+Started GET "/?start=deroy&end=abelson" for 127.0.0.1 at 2016-04-25 13:32:39 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"deroy", "end"=>"abelson"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (0.8ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  [1m[36mBuilding Load (0.2ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'deroy'[0m
+  [1m[35mBuilding Load (0.2ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'abelson'
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1028]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 337]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 336]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 88]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 87]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 93]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 94]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 95]]
+  [1m[36mNode Load (1.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 80]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 68]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 105]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 69]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 311]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 312]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1001]]
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 739ms (Views: 650.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:32:40 -0400
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-04-25 13:33:51 -0400
+Processing by SessionsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (67.1ms)
+Completed 200 OK in 480ms (Views: 477.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/jquery-1.11.1.min.js" for 127.0.0.1 at 2016-04-25 13:33:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery-1.11.1.min.js"):
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.6ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.8ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.0ms)
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:51 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:51 -0400
+
+
+Started GET "/sessions/create?name=Xin+Yao&password=[FILTERED]" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"name"=>"Xin Yao", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."name" = 'Xin Yao' LIMIT 1
+Redirected to http://0.0.0.0:3000/sessions/new
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 276ms (Views: 272.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+
+Started GET "/javascripts/jquery-1.11.1.min.js" for 127.0.0.1 at 2016-04-25 13:33:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery-1.11.1.min.js"):
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.1ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.4ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.7ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:58 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:33:58 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:33:58 -0400
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-04-25 13:37:07 -0400
+Processing by SessionsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 300ms (Views: 298.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/javascripts/jquery-1.11.1.min.js" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery-1.11.1.min.js"):
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.8ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/xyao01/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.5ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 13:37:08 -0400
+
+
+Started GET "/sessions/create?name=heihei&password=[FILTERED]" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"name"=>"heihei", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."name" = 'heihei' LIMIT 1
+Redirected to http://0.0.0.0:3000/welcome/index
+Completed 302 Found in 143ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC
+  [1m[36m (5.5ms)[0m  [1mSELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"[0m
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 236ms (Views: 201.6ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:18 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 13:37:19 -0400
+
+
+Started GET "/welcome/index?start=asac&end=castle" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"asac", "end"=>"castle"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 16 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (0.8ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  [1m[36mBuilding Load (0.3ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'asac'[0m
+  [1m[35mBuilding Load (0.1ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'castle'
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1002]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 310]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 143]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 327]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 144]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 129]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 130]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 125]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 120]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 124]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 364]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 103]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 101]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 333]]
+  [1m[36mNode Load (0.0ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 100]]
+  [1m[35mNode Load (0.0ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 357]]
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1047]]
+  Rendered welcome/_form.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 337ms (Views: 287.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/universes.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/jquery.backstretch.min.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/universes.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/markerclusterer_packed.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/geometry.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-25 13:37:25 -0400
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2016-04-25 13:37:26 -0400
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2016-04-25 13:37:26 -0400
+
+
+Started GET "/assets/back2.jpg" for 127.0.0.1 at 2016-04-25 13:37:26 -0400
