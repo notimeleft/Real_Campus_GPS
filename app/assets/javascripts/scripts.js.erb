@@ -4,7 +4,9 @@ jQuery(document).ready(function() {
     /*
         Fullscreen background
     */
-    $.backstretch("<%= image_url('back.jpg') %>");
+    $.backstretch(["<%= image_url('back.jpg') %>",
+                    "<%= image_url('back1.jpg') %>",
+                    "<%= image_url('back2.jpg') %>"], {duration: 3000, fade: 750});
 
     /*
         Form validation
