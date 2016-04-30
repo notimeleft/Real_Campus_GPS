@@ -16,8 +16,6 @@
 //= require jquery.backstretch.min
 //= require scripts
 //= require jquery.turbolinks
-//= require jquery_ujs
-//= require jquery-ui
 //= require turbolinks
 //= require underscore
 //= require gmaps/google
