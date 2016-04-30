@@ -15958,3 +15958,93 @@ Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 
 
 
 Started GET "/assets/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2016-04-30 14:29:44 -0400
+
+
+Started GET "/welcome/index?start=abelson&end=admissions" for 127.0.0.1 at 2016-04-30 14:33:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Parameters: {"start"=>"abelson", "end"=>"admissions"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 20 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT "buildings"."id", "buildings"."name" FROM "buildings"   ORDER BY "buildings"."name" ASC[0m
+  [1m[35m (1.0ms)[0m  SELECT "paths"."start", "paths"."end", "paths"."distance" FROM "paths"
+  [1m[36mBuilding Load (0.1ms)[0m  [1mSELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'abelson'[0m
+  [1m[35mBuilding Load (0.1ms)[0m  SELECT "buildings".* FROM "buildings"  WHERE "buildings"."name" = 'admissions'
+  [1m[36mPath Load (0.2ms)[0m  [1mSELECT "paths".* FROM "paths"  WHERE "paths"."start" = 1001 AND "paths"."end" = 312[0m
+  [1m[35mPath Load (0.2ms)[0m  SELECT "paths".* FROM "paths"  WHERE "paths"."start" = 312 AND "paths"."end" = 70
+  [1m[36mPath Load (0.2ms)[0m  [1mSELECT "paths".* FROM "paths"  WHERE "paths"."start" = 70 AND "paths"."end" = 71[0m
+  [1m[35mPath Load (0.2ms)[0m  SELECT "paths".* FROM "paths"  WHERE "paths"."start" = 71 AND "paths"."end" = 72
+  [1m[36mPath Load (0.2ms)[0m  [1mSELECT "paths".* FROM "paths"  WHERE "paths"."start" = 72 AND "paths"."end" = 73[0m
+  [1m[35mPath Load (0.2ms)[0m  SELECT "paths".* FROM "paths"  WHERE "paths"."start" = 73 AND "paths"."end" = 74
+  [1m[36mPath Load (0.2ms)[0m  [1mSELECT "paths".* FROM "paths"  WHERE "paths"."start" = 74 AND "paths"."end" = 76[0m
+  [1m[35mPath Load (0.2ms)[0m  SELECT "paths".* FROM "paths"  WHERE "paths"."start" = 76 AND "paths"."end" = 22
+  [1m[36mPath Load (0.2ms)[0m  [1mSELECT "paths".* FROM "paths"  WHERE "paths"."start" = 22 AND "paths"."end" = 23[0m
+  [1m[35mPath Load (0.2ms)[0m  SELECT "paths".* FROM "paths"  WHERE "paths"."start" = 23 AND "paths"."end" = 24
+  [1m[36mPath Load (0.2ms)[0m  [1mSELECT "paths".* FROM "paths"  WHERE "paths"."start" = 24 AND "paths"."end" = 303[0m
+  [1m[35mPath Load (0.3ms)[0m  SELECT "paths".* FROM "paths"  WHERE "paths"."start" = 303 AND "paths"."end" = 1008
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1001]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 312]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 71]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 72]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 73]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 74]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 24]]
+  [1m[35mNode Load (0.1ms)[0m  SELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1  [["id", 303]]
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT  "nodes".* FROM "nodes"  WHERE "nodes"."id" = ? LIMIT 1[0m  [["id", 1008]]
+  Rendered welcome/_form.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 746ms (Views: 670.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-04-30 14:33:21 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-04-30 14:33:21 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js?body=1" for 127.0.0.1 at 2016-04-30 14:33:21 -0400
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-30 14:33:21 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2016-04-30 14:33:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-30 14:33:21 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js?body=1" for 127.0.0.1 at 2016-04-30 14:33:21 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js?body=1" for 127.0.0.1 at 2016-04-30 14:33:21 -0400
+
+
+Started GET "/assets/welcome/modernizr.custom.95515.js" for 127.0.0.1 at 2016-04-30 14:33:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-30 14:33:22 -0400
+
+
+Started GET "/assets/welcome/jquery-ui.min.js?body=1" for 127.0.0.1 at 2016-04-30 14:33:22 -0400
+
+
+Started GET "/assets/welcome/jquery-ui.min.js" for 127.0.0.1 at 2016-04-30 14:33:22 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js" for 127.0.0.1 at 2016-04-30 14:33:22 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js.erb" for 127.0.0.1 at 2016-04-30 14:33:22 -0400
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2016-04-30 14:33:22 -0400
+
+
+Started GET "/assets/jquery-1.12.0.min.js.erb" for 127.0.0.1 at 2016-04-30 14:33:22 -0400
+
+
+Started GET "/assets/welcome/DatalistPolyfill.js" for 127.0.0.1 at 2016-04-30 14:33:22 -0400
