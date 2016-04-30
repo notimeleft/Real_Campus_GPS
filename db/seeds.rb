@@ -7,12 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Universe.create(name:"Our Universe", size:100)
 
-#User.delete_all
+User.delete_all
 Path.delete_all
 Building.delete_all
 Node.delete_all
-
-User.create(name:"Drew", email:"dfarbs@brandeis.edu", password: "test")
 
 File.foreach('db/paths.txt') do |line|
   _start, _end, _distance = line.split("\t")
@@ -38,5 +36,15 @@ File.foreach('db/node coordinates.txt') do |line|
   x, y = coordinates.split(',')
   a.latitude = x.to_f
   a.longitude = y.to_f
+  a.save
+end
+
+File.foreach('db/paths_to_string.txt') do |line|
+  _start, _end, _description = line.split("\t")
+  print _start
+  print _end
+  print _description
+  a = Path.where(start: _start.strip.to_i, end: _end.strip.to_i)[0]
+  a.description = (_description.strip)[1..-2]
   a.save
 end

@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   post 'sessions/new' => 'sessions#create'
   get 'welcome/index'
   get 'welcome/find_path'
+	get 'welcome/route'
 
   post 'users/create' => 'users#create'
 
