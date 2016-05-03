@@ -11,6 +11,8 @@
  * file per style scope.
  *= require bootstrap.min
  *= require style
+ *= require font-awesome.min
+ *= require floatbox
  *= require_tree .
  *= require_self
  */

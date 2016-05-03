@@ -18,4 +18,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require underscore
+//= require jquery-ui.min
+//= require floatbox/floatbox.js
+//= require DatalistPolyfill.js
 //= require_tree .

@@ -1,6 +1,9 @@
 var mapHandler;
-var coordsArr = []
+var line;
+var markers = [];
+
 function initMap() {
+	var coordsArr = []
 	for (i = 0; i < nodes.length; i++) {
 		coordsArr.push(new google.maps.LatLng(nodes[i][0], nodes[i][1]));
 	}

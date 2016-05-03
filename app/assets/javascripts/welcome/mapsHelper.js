@@ -5,8 +5,8 @@ function buildPath(coordsArr) {
 		strokeColor: '#393',
 		fillColor: '#00FF00',
 		fillOpacity: 1.0,
-	}
-	var line = new google.maps.Polyline({
+	};
+	line = new google.maps.Polyline({
 		path: coordsArr,
 		strokeColor: '#006400',
 		strokeOpacity: 0.5,
@@ -31,9 +31,11 @@ function buildPath(coordsArr) {
 			icon: image_end,
 			animation: google.maps.Animation.DROP
 		});
+		markers.push(start_loc);
+		markers.push(destination_loc);
 	}
 	animateCircle(line)
-}
+};
 
 function animateCircle(line) {
 	var count = 0;
@@ -49,7 +51,7 @@ function animateCircle(line) {
 function setGeoCookie(position) {
 	var cookie_val = position.coords.latitude + "|" + position.coords.longitude;
 	document.cookie = "lat_lng=" + escape(cookie_val);
-}
+};
 
 function showCurrPosOnMap(position){
 	var lat = position.coords.latitude;
@@ -64,4 +66,12 @@ function showCurrPosOnMap(position){
 		animation: google.maps.Animation.DROP
 	});
 	infowindow.open(mapHandler, marker);
+};
+
+function reloadMap() {
+	mapHandler.setCenter(new google.maps.LatLng(42.366426, -71.258601));
+	line.setMap(null);
+	for(i = 0; i < markers.length; i++) {
+		markers[i].setMap(null);
+	}
 };

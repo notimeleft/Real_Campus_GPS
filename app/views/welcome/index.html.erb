@@ -29,14 +29,15 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<form class="navbar-form navbar-left" role="search" action="/welcome/index" id="input_form">
 				<div class="form-group">
-          <datalist id = "building_list">
-              <%=options_for_select(@notes)%>
-          </datalist>
+          			<datalist id = "building_list">
+              			<%=options_for_select(@notes)%>
+          			</datalist>
 					<input name="start" type="text" class="form-control" placeholder="Start Location" list="building_list">
 					<input name="end" type="text" class="form-control" placeholder="Destination" list="building_list">
 				</div>
-        <button type="submit" class="btn" form="input_form">Search</button>
+        		<button type="submit" class="btn">Search</button>
 			</form>
+			<!--<button onClick="reloadMap()" class="btn">Reload</button>-->
 
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
