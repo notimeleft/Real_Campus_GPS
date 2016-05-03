@@ -14,10 +14,8 @@
 //= require jquery-1.12.0.min
 //= require bootstrap.min
 //= require jquery.backstretch.min
-//= require scripts
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
 //= require underscore
-//= require gmaps/google
 //= require_tree .
