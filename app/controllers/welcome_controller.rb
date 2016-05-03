@@ -14,10 +14,9 @@ class WelcomeController < ApplicationController
     name_list.sort_by{|id, name| name}.each do |id, name|
       @notes[name] = name
     end
-		if params[:start] != nil && params[:end] != nil
+		if params[:start] != nil && params[:end] != nil && params[:end] != ""
 			@result = []
 			if params[:start] != ""
-				print "!!!!!!!!!!!!!!", params[:start]
 				start_id = (Building.where(name: params[:start]))[0].id.to_i
 			else
 				lat_lng = cookies[:lat_lng].split("|")
