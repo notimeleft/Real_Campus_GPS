@@ -16,7 +16,14 @@ class WelcomeController < ApplicationController
     end
 		if params[:start] != nil && params[:end] != nil
 			@result = []
-			start_id = (Building.where(name: params[:start]))[0].id.to_i
+			if params[:start] != ""
+				print "!!!!!!!!!!!!!!", params[:start]
+				start_id = (Building.where(name: params[:start]))[0].id.to_i
+			else
+				lat_lng = cookies[:lat_lng].split("|")
+				start_id = WelcomeHelper.nearest_building_id(lat_lng)
+				@result.push(lat_lng)
+			end
 			end_id = (Building.where(name: params[:end]))[0].id.to_i
 			paths = map.solve(start_id, end_id)
 			@strs = map.solve_text(start_id, end_id)

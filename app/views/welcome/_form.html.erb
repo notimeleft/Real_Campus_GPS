@@ -113,9 +113,11 @@
        //drop();
        drawLine(plan, listOfCoordinates);
 
-       if(navigator.geolocation)
-          navigator.geolocation.getCurrentPosition(displayOnMap,function error(msg){alert('Please enable your GPS position future.');
+       if(navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(displayOnMap,function error(msg){alert('Please enable your GPS position feature.');
           }, {maximumAge:600000, timeout:8000, enableHighAccuracy: true});
+					navigator.geolocation.getCurrentPosition(setGeoCookie);
+				}
 
        handler.fitMapToBounds();
      });
@@ -125,6 +127,11 @@
         handler.map.centerOn(new google.maps.LatLng(42.366426, -71.258601));
           //alert("hello!");
       });
+
+			function setGeoCookie(position) {
+  			var cookie_val = position.coords.latitude + "|" + position.coords.longitude;
+  			document.cookie = "lat_lng=" + escape(cookie_val);
+			}
 
      function displayOnMap(position){
        var lat = position.coords.latitude;
