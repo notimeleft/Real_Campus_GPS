@@ -1,37 +1,33 @@
 require './lib/map.rb'
 
 class WelcomeController < ApplicationController
-	#before_filter :authorize
 
-  def index
-		#if @user.Home_Node
-		map = CampusMap.new()
+  	def index
 		@result = [[42.365965, -71.25981]]
-    name_list = Building.order(:name).pluck(:id, :name)
-		adjlist = Path.pluck(:start, :end, :distance)
-		map.load_map(adjlist)
-    @notes = {}
-    name_list.sort_by{|id, name| name}.each do |id, name|
-      @notes[name] = name
-    end
-		if params[:start] != nil && params[:end] != nil && params[:end] != ""
+    	name_list = Building.order(:name).pluck(:id, :name)
+    	@notes = {}
+    	name_list.sort_by{|id, name| name}.each do |id, name|
+      		@notes[name] = name
+		end
+  	end
+
+ 	def search
+		respond_to do |format|
 			@result = []
-			if params[:start] != ""
-				start_id = (Building.where(name: params[:start]))[0].id.to_i
-			else
-				lat_lng = cookies[:lat_lng].split("|")
-				start_id = WelcomeHelper.nearest_building_id(lat_lng)
-				@result.push(lat_lng)
+			if params[:start] != nil && params[:end] != nil && params[:end] != ""
+				if params[:start] != ""
+					start_id = (Building.where(name: params[:start]))[0].id.to_i
+				else
+					lat_lng = cookies[:lat_lng].split("|")
+					start_id = WelcomeHelper.nearest_building_id(lat_lng)
+					@result.push(lat_lng)
+				end
+				end_id = (Building.where(name: params[:end]))[0].id.to_i
+				@result = WelcomeHelper.find_route(start_id, end_id)
 			end
-			end_id = (Building.where(name: params[:end]))[0].id.to_i
-			paths = map.solve(start_id, end_id)
-			@strs = map.solve_text(start_id, end_id)
-			paths.each do |id|
-				node = Node.find(id)
-				@result.push([node.latitude, node.longitude])
-			end
-    end
-  end
+			format.js {}
+		end
+	end
 
 	def route
 		raw_text = params[:text]
