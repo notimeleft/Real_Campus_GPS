@@ -10,7 +10,6 @@ class UserMailer < ActionMailer::Base
   def directions_email(user, str)
   	@user = user
   	@str = str
-		print "!!!!!!!!!!!!!!!!!!!!! ", @user.email
   	mail(to: @user.email, subject: 'Your directions')
   end
 end
