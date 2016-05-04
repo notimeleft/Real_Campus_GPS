@@ -46,6 +46,6 @@ module WelcomeHelper
 			node = Node.find(id)
 			result.push([node.latitude, node.longitude])
 		end
-		return result
+		return result, strs
 	end
 end

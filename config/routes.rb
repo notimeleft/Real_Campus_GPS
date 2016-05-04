@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get 'welcome/find_path'
 	get 'welcome/route'
 	get 'welcome/search'
+	get 'welcome/send_email'
 
   post 'users/create' => 'users#create'
 

@@ -3,7 +3,8 @@ require './lib/map.rb'
 class WelcomeController < ApplicationController
 
   	def index
-		@result = [[42.365965, -71.25981]]
+		@result = []
+		@text_d = ""
     	name_list = Building.order(:name).pluck(:id, :name)
     	@notes = {}
     	name_list.sort_by{|id, name| name}.each do |id, name|
@@ -14,6 +15,7 @@ class WelcomeController < ApplicationController
  	def search
 		respond_to do |format|
 			@result = []
+			@text_d = ""
 			if params[:start] != nil && params[:end] != nil && params[:end] != ""
 				if params[:start] != ""
 					start_id = (Building.where(name: params[:start]))[0].id.to_i
@@ -23,10 +25,15 @@ class WelcomeController < ApplicationController
 					@result.push(lat_lng)
 				end
 				end_id = (Building.where(name: params[:end]))[0].id.to_i
-				@result = WelcomeHelper.find_route(start_id, end_id)
+				@result, session[:text_d] = WelcomeHelper.find_route(start_id, end_id)
 			end
 			format.js {}
 		end
+	end
+
+	def send_email
+		email_address = params[:email]
+		UserMailer.directions_email(User.current_user, email_address, session[:text_d]).deliver
 	end
 
 	def route

@@ -2,7 +2,9 @@
 
 	<div id="map" style='width: 100%; height: 92%; margin: 0; padding: 0;'></div>
 
-	<script> var nodes = <%= raw @result %>; </script>
+	<script>
+		var nodes = <%= raw @result %>;
+	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSpHhc8DCoqTn4LG8OpJ_OL8B0wds6ojY&callback=initMap" async defer></script>
 
 </body>
