@@ -62,21 +62,12 @@
               <li role="presentation" class="divider"></li>
             <%=content_tag(:li, role:"presentation"){
                 if !(User.current_user.nil?)
-                  link_to "Send Email", welcome_route_url(:text => @strs), class: "floatbox", :data => { :'fb-options' => 'width:50% height:60% contentScroll:true' }
-                else
-                  content_tag(:a, "Log in", 'data-toggle'=>"modal", 'data-target'=>"#myModalHorizontal", 'href'=>"#myModalHorizontal")
-                end
-              }
-            %>
-            <%=content_tag(:li, role:"presentation"){
-                if !(User.current_user.nil?)
                   link_to("Change User", "#")
                 else
                   link_to("Sign Up", users_new_url, 'data-no-turbolink'=> 'true')
                 end
               }
             %>
-             <li role="presentation" class="divider"></li>
             <%=content_tag(:li, role:"presentation"){
                if !(User.current_user.nil?)
                  link_to('Log Out', sessions_destroy_url)
