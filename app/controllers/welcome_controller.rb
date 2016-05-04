@@ -33,8 +33,7 @@ class WelcomeController < ApplicationController
 
 	def send_email
 		respond_to do |format|
-			email_address = params[:email]
-			UserMailer.directions_email(User.current_user, email_address, session[:text_d]).deliver
+			UserMailer.directions_email(User.current_user, params[:email], session[:text_d]).deliver
 			format.html { render :nothing => true }
 		end
 	end
