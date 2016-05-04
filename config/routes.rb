@@ -23,6 +23,8 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'welcome/find_path'
 	get 'welcome/route'
+	get 'welcome/search'
+	post 'welcome/send_email' => 'welcome#send_email'
 
   post 'users/create' => 'users#create'
 

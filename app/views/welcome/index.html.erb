@@ -27,7 +27,8 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<form class="navbar-form navbar-left" role="search" action="/welcome/index" id="input_form">
+			<!-- <form class="navbar-form navbar-left" role="search" action="/welcome/index" id="input_form" data-remote="true">-->
+			<%=form_tag("/welcome/search", :method => "get", :class => "navbar-form navbar-left", :remote => "true") do%>
 				<div class="form-group">
           			<datalist id = "building_list">
               			<%=options_for_select(@notes)%>
@@ -36,8 +37,14 @@
 					<input name="end" type="text" class="form-control" placeholder="Destination" list="building_list">
 				</div>
         		<button type="submit" class="btn">Search</button>
-			</form>
+			<%end%>
+			<!--</form>-->
 			<!--<button onClick="reloadMap()" class="btn">Reload</button>-->
+			<ul class="nav navbar-nav">
+				<%=content_tag(:li, :class=>"disabled", :id=>"emailSend"){
+              		content_tag(:a, "Send Email", :id=>"sendEmailLink")
+          		}%>
+			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
@@ -45,7 +52,7 @@
           <ul class="dropdown-menu">
             <%=content_tag(:li, role:"presentation"){
                 if !(User.current_user.nil?)
-									link_to User.current_user.name, users_path, class: "floatbox", style: "font-style: italic", :data => { :'fb-options' => 'width:50% height:50% contentScroll:true' }
+					link_to User.current_user.name, users_path, class: "floatbox", style: "font-style: italic", :data => { :'fb-options' => 'width:50% height:50% contentScroll:true' }
                 else
                   content_tag(:a, "Guest", style:"font-style: italic")
                   # link_to("guest", "#")
@@ -55,21 +62,12 @@
               <li role="presentation" class="divider"></li>
             <%=content_tag(:li, role:"presentation"){
                 if !(User.current_user.nil?)
-                  link_to "Send Email", welcome_route_url(:text => @strs), class: "floatbox", :data => { :'fb-options' => 'width:50% height:60% contentScroll:true' }
-                else
-                  content_tag(:a, "Log in", 'data-toggle'=>"modal", 'data-target'=>"#myModalHorizontal", 'href'=>"#myModalHorizontal")
-                end
-              }
-            %>
-            <%=content_tag(:li, role:"presentation"){
-                if !(User.current_user.nil?)
                   link_to("Change User", "#")
                 else
                   link_to("Sign Up", users_new_url, 'data-no-turbolink'=> 'true')
                 end
               }
             %>
-             <li role="presentation" class="divider"></li>
             <%=content_tag(:li, role:"presentation"){
                if !(User.current_user.nil?)
                  link_to('Log Out', sessions_destroy_url)
@@ -116,6 +114,28 @@
            </div>
          </div>
        </div>
+  </div>
+
+  <div class="modal fade" id="sendEmail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div style="width:70%; margin-right:auto; margin-left:auto; margin-top:10%;">
+      <div class="col-sm-6 col-sm-offset-3 form-box">
+        <div class="form-top">
+          <div class="form-top-left">
+            <h3>Want to send text direction to someone?</h3>
+              <p>Enter someone's email address:</p>
+          </div>
+        </div>
+        <div class="form-bottom">
+          <form role="form" action="/welcome/send_email" method="post" class="send-form" data-remote="true">
+            <div class="form-group">
+              <label class="sr-only" for="form-username">Email Address</label>
+              <input type="text" name="email" style="height:50px" placeholder="Email Address" class="form-email form-control" id="form-email">
+            </div>
+            <button type="submit" class="btn" style="height:50px" data-toggle="modal" data-target="#sendEmail">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
 <%=render 'form', :result => @result%>

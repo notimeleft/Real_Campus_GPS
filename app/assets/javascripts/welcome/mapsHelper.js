@@ -17,6 +17,7 @@ function buildPath(coordsArr) {
 		map: mapHandler,
 	});
 	if(coordsArr.length > 1){
+		showSendEmail();
 		var image_end = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
 		var image_start = 'https://mt.googleapis.com/vt/icon/name=icons/onion/22-blue-dot.png&scale=1.0';
 		var start_loc = new google.maps.Marker({
@@ -74,4 +75,13 @@ function reloadMap() {
 	for(i = 0; i < markers.length; i++) {
 		markers[i].setMap(null);
 	}
+};
+
+function showSendEmail(){
+	if(nodes.length > 0){
+		 document.getElementById("emailSend").className = "enabled";
+		  document.getElementById("sendEmailLink").setAttribute("data-toggle", "modal");
+		  document.getElementById("sendEmailLink").setAttribute("data-target", "#sendEmail");
+		  document.getElementById("sendEmailLink").setAttribute("href", "#sendEmail");
+	  }
 };
