@@ -25,7 +25,7 @@ class WelcomeController < ApplicationController
 			end
 			end_id = (Building.where(name: params[:end]))[0].id.to_i
 			paths = map.solve(start_id, end_id)
-			@strs = map.solve_text(start_id, end_id)
+			@strs = "\u2022" + map.solve_text(start_id, end_id)
 			paths.each do |id|
 				node = Node.find(id)
 				@result.push([node.latitude, node.longitude])
@@ -34,8 +34,6 @@ class WelcomeController < ApplicationController
   end
 
 	def route
-		#raw_text = params[:text]
-		#@strs = raw_text.split("\n")
 		UserMailer.directions_email(User.current_user, @strs).deliver
 	end
 

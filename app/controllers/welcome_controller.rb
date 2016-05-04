@@ -34,9 +34,7 @@ class WelcomeController < ApplicationController
   end
 
 	def route
-		raw_text = params[:text]
-		@strs = raw_text.split("\n")
-		UserMailer.directions_email(User.current_user, raw_text).deliver
+		UserMailer.directions_email(User.current_user, @strs).deliver
 	end
 
 	#def select_home
