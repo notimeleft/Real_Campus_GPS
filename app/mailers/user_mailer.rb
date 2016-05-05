@@ -7,9 +7,9 @@ class UserMailer < ActionMailer::Base
   	mail(to: @user.email, subject: 'Welcome to Campus GPS')
   end
 
-  def directions_email(user, str)
+  def directions_email(user, text)
   	@user = user
-  	@str = str
+  	@str = text.split("|")
   	mail(to: @user.email, subject: 'Your directions')
   end
 end

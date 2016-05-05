@@ -19,7 +19,7 @@ class CampusMap
 		paths.each do |p_id, s_id, distance|
 			text = (Path.where(start: p_id, end: s_id)[0]).description
 			if text != nil
-				ret = ret + text.to_s + "\n"
+				ret = ret + text.to_s + "|"
 			end
 		end
 		return ret
