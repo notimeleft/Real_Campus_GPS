@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+	</head>
+	<body>
+		<h1>Thank you for using Campus GPS, <%= @user.name %></h1>
+
+		Here are your text directions:<br>
+
+		<% for i in 0..@str.length-1 %>
+			<%= "\u2022" + @str[i].to_s %><br>
+		<% end %>
+	</body>
+</html>
