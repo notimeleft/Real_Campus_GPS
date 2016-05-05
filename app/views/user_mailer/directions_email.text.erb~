@@ -3,6 +3,4 @@ Thank you for using Campus GPS, <%= @user.name %>
 
 Here are your text directions:
 
-<% for i in 0..@str.length-1 %>
-<%= "\u2022" + @str[i].to_s + "\n" %>
-<% end %>
+<%= @str %>

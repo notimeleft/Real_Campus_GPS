@@ -58,9 +58,14 @@ class WelcomeController < ApplicationController
 		end
 	end
 
+	def route
+		raw_text = session[:text_d].split("\n")
+		UserMailer.directions_email(User.current_user, raw_text).deliver
+	end
+	
 	def send_email
 		respond_to do |format|
-			UserMailer.directions_email(User.current_user, params[:email], session[:text_d]).deliver
+			UserMailer.directions_email(User.current_user, session[:text_d]).deliver
 			format.html { render :nothing => true }
 		end
 	end
