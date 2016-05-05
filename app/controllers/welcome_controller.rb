@@ -31,16 +31,16 @@ class WelcomeController < ApplicationController
 		end
 	end
 
-<<<<<<< HEAD
 	def route
-		UserMailer.directions_email(User.current_user, @strs).deliver
-=======
+		raw_text = session[:text_d].split("\n")
+		UserMailer.directions_email(User.current_user, raw_text).deliver
+	end
+	
 	def send_email
 		respond_to do |format|
-			UserMailer.directions_email(User.current_user, params[:email], session[:text_d]).deliver
+			UserMailer.directions_email(User.current_user, session[:text_d]).deliver
 			format.html { render :nothing => true }
 		end
->>>>>>> 0aabc7d0890d35285206cd374620d2fa2857a41f
 	end
 
 	#def select_home

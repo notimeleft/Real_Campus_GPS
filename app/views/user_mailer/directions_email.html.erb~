@@ -8,8 +8,6 @@
 
 		Here are your text directions:<br>
 
-		<% for i in 0..@str.length-1 %>
-			<%= "\u2022" + @str[i].to_s %><br>
-		<% end %>
+		<%= @str %>
 	</body>
 </html>
