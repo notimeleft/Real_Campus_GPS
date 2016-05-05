@@ -6,13 +6,15 @@ class WelcomeController < ApplicationController
 		@result = []
 		@text_d = ""
     	name_list = Building.order(:name).pluck(:id, :name)
-    	@notes = {}
+    	@start_list = {}
+		@end_list = {}
     	name_list.sort_by{|id, name| name}.each do |id, name|
-      		@notes[name] = name
+      		@start_list[name] = name
+			@end_list[name] = name
 		end
-		@notes['nearest dining'] = 'nearest dining'
-		@notes['nearest athletics'] = 'nearest athletics'
-		@notes['nearest parking'] = 'nearest parking'
+		@end_list['nearest dining'] = 'nearest dining'
+		@end_list['nearest athletics'] = 'nearest athletics'
+		@end_list['nearest parking'] = 'nearest parking'
   	end
 
  	def search
@@ -26,6 +28,7 @@ class WelcomeController < ApplicationController
 					start_id = (Building.where(name: params[:start]))[0].id.to_i
 				else
 					lat_lng = cookies[:lat_lng].split("|")
+					print ";;;;;;;;;;;;;;;;;", lat_lng
 					start_id = WelcomeHelper.nearest_building_id(lat_lng)
 					@result.push(lat_lng)
 				end
@@ -58,14 +61,9 @@ class WelcomeController < ApplicationController
 		end
 	end
 
-	def route
-		raw_text = session[:text_d].split("\n")
-		UserMailer.directions_email(User.current_user, raw_text).deliver
-	end
-	
 	def send_email
 		respond_to do |format|
-			UserMailer.directions_email(User.current_user, session[:text_d]).deliver
+			UserMailer.directions_email(User.current_user, params[:email], session[:text_d]).deliver
 			format.html { render :nothing => true }
 		end
 	end

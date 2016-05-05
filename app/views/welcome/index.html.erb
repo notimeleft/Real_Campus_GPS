@@ -30,11 +30,14 @@
 			<!-- <form class="navbar-form navbar-left" role="search" action="/welcome/index" id="input_form" data-remote="true">-->
 			<%=form_tag("/welcome/search", :method => "get", :class => "navbar-form navbar-left", :remote => "true") do%>
 				<div class="form-group">
-          			<datalist id = "building_list">
-              			<%=options_for_select(@notes)%>
+          			<datalist id = "start_list">
+              			<%=options_for_select(@start_list)%>
           			</datalist>
-					<input name="start" type="text" class="form-control" placeholder="Start Location" list="building_list">
-					<input name="end" type="text" class="form-control" placeholder="Destination" list="building_list">
+					<datalist id = "end_list">
+              			<%=options_for_select(@end_list)%>
+          			</datalist>
+					<input name="start" type="text" class="form-control" placeholder="Start Location" list="start_list">
+					<input name="end" type="text" class="form-control" placeholder="Destination" list="end_list">
 				</div>
         		<button type="submit" class="btn">Search</button>
 			<%end%>

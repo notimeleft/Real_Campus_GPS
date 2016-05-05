@@ -59,7 +59,7 @@
 7059,ziv 128
 7060,ziv 129
 7061,ziv 130
-7062,North Quad 
+7062,North Quad
 7063,Foster Mods
 2001,Sherman
 2002,Usdan
@@ -79,9 +79,9 @@
 3005,Village Fitness center
 4001,Administration Lot
 4002,Admissions Lot
-4003,Athletics Lot
-4004,Castle Lot
-4005,Chapels Lot
+4003,Athletics Lot (Yellow)
+4004,Castle Lot (Blue)
+4005,Chapels Lot (Yellow)
 4007,Epstein Lot (Purple)
 4008,Hassenfeld Lot (Yellow)
 4009,Kutz Lot (Blue)
