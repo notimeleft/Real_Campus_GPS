@@ -40,12 +40,16 @@ module WelcomeHelper
 		map = CampusMap.new()
 		adjlist = Path.pluck(:start, :end, :distance)
 		map.load_map(adjlist)
-		paths = map.solve(start_id, end_id)
+		paths, distance = map.solve(start_id, end_id)
+		print "%%%%%%%%%%%%%%%%", start_id, ' ', end_id, "\n"
+		if paths == false
+			print "%%%%%%%%%%%%%%%%", start_id, ' ', end_id, "\n"
+		end
 		strs = map.solve_text(start_id, end_id)
 		paths.each do |id|
 			node = Node.find(id)
 			result.push([node.latitude, node.longitude])
 		end
-		return result, strs
+		return result, strs, distance
 	end
 end

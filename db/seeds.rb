@@ -36,6 +36,7 @@ File.foreach('db/node coordinates.txt') do |line|
   x, y = coordinates.split(',')
   a.latitude = x.to_f
   a.longitude = y.to_f
+  a.nodetype = a.id / 1000
   a.save
 end
 

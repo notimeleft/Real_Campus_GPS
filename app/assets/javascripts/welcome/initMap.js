@@ -18,6 +18,7 @@ function initMap() {
 		maxBounds: mapBound,
 		mapTypeControl: false,
 	});
+	initFacilities()
 	buildPath(coordsArr);
 	google.maps.event.addListener(mapHandler, 'dragend', function(evt) {
 		if(mapBound.contains(mapHandler.getCenter())) return;

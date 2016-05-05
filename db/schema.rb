@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160430023512) do
+ActiveRecord::Schema.define(version: 20160505015118) do
 
   create_table "buildings", force: true do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160430023512) do
     t.float    "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "nodetype"
   end
 
   create_table "paths", force: true do |t|

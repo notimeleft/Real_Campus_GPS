@@ -40,45 +40,34 @@
 			<%end%>
 			<!--</form>-->
 			<!--<button onClick="reloadMap()" class="btn">Reload</button>-->
-			<ul class="nav navbar-nav">
-				<%=content_tag(:li, :class=>"disabled", :id=>"emailSend"){
-              		content_tag(:a, "Send Email", :id=>"sendEmailLink")
-          		}%>
-			</ul>
-
 			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-          <a class="dropdown-toggle" role="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
-          <ul class="dropdown-menu">
-            <%=content_tag(:li, role:"presentation"){
-                if !(User.current_user.nil?)
-					link_to User.current_user.name, users_path, class: "floatbox", style: "font-style: italic", :data => { :'fb-options' => 'width:50% height:50% contentScroll:true' }
-                else
-                  content_tag(:a, "Guest", style:"font-style: italic")
-                  # link_to("guest", "#")
-                end
+        <%= if !(User.current_user.nil?)
+              content_tag(:li){
+                link_to User.current_user.name, users_path, class: "floatbox", style: "font-style: italic", :data => { :'fb-options' => 'width:50% height:50% contentScroll:true' }
               }
-            %>
-              <li role="presentation" class="divider"></li>
-            <%=content_tag(:li, role:"presentation"){
-                if !(User.current_user.nil?)
-                  link_to("Change User", "#")
-                else
-                  link_to("Sign Up", users_new_url, 'data-no-turbolink'=> 'true')
-                end
+            else
+              content_tag(:li){
+                content_tag(:a, "Log in", 'data-toggle'=>"modal", 'data-target'=>"#myModalHorizontal", 'href'=>"#myModalHorizontal")
               }
-            %>
-            <%=content_tag(:li, role:"presentation"){
-               if !(User.current_user.nil?)
-                 link_to('Log Out', sessions_destroy_url)
-               else
-                 link_to("More Options", "#")
-               end
-             }
-            %>
-          </ul>
-        </li>
-			</ul>
+            end
+        %>
+        <%= if !(User.current_user.nil?)
+              content_tag(:li, :class=>"disabled", :id=>"emailSend"){
+                content_tag(:a, "Send Email", :id=>"sendEmailLink")
+              }
+            else
+              content_tag(:li){
+                link_to("Sign Up", users_new_url, 'data-no-turbolink'=> 'true')
+              }
+            end
+        %>
+        <%= if !(User.current_user.nil?)
+              content_tag(:li){
+                link_to('Log Out', sessions_destroy_url)
+              }
+            end
+        %>
+      </ul>
 		</div>
 	</div>
 	</nav>

@@ -11,30 +11,10 @@ class CampusMap
 			@graph.add_edge(_start, _end, _distance)
 		end
 	end
-=begin
-	def solve(start_id, end_id)
-		ret = ""
-		paths = @graph.shortest_path(start_id, end_id)
-		return false if paths == false
-		total_distance = 0
-		paths.each do |p_id, s_id, distance|
-			if p_id == start_id
-				ret += "Leave #{get_node_name(p_id)}<br>"
-			elsif s_id == end_id
-				ret += "Enter #{get_node_name(s_id)}<br>"
-			else
-				ret += "From #{get_node_name(p_id)} to #{get_node_name(s_id)}, distance #{distance}<br>"
-				total_distance += distance
-			end
-		end
-		ret += "Total distance: #{total_distance}<br>"
-		return ret
-	end
-=end
 
 	def solve_text(start_id, end_id)
 		ret = ""
-		paths = @graph.shortest_path(start_id, end_id)
+		paths, distance = @graph.shortest_path(start_id, end_id)
 		return false if paths == false
 		paths.each do |p_id, s_id, distance|
 			text = (Path.where(start: p_id, end: s_id)[0]).description
@@ -47,13 +27,13 @@ class CampusMap
 
 	def solve(start_id, end_id)
 		ret = []
-		paths = @graph.shortest_path(start_id, end_id)
-		return false if paths == false
+		paths, distance = @graph.shortest_path(start_id, end_id)
+		return false, -1 if paths == false
 		paths.each do |p_id, s_id, distance|
 			ret.push(p_id)
 		end
 		ret.push((paths.last)[1])
-		return ret
+		return ret, distance
 	end
 
 end
@@ -104,7 +84,7 @@ class DirectedGraph
 			paths.unshift [predecessor[ptr][0], ptr, predecessor[ptr][1]]
 			ptr = predecessor[ptr][0]
 		end
-		return paths
+		return paths, distance[end_id]
 	end
 
 end

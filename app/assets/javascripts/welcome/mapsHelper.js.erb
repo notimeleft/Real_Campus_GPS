@@ -1,0 +1,156 @@
+function initFacilities() {
+	var p_icon = {
+    	url: "<%= image_url('parking-icon.png') %>", //
+        scaledSize: new google.maps.Size(30, 30), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+	};
+	var parking_markers = [];
+	var parking_coordinates = [{lat: 42.364964, lng: -71.260059},{lat: 42.364419, lng: -71.260027},{lat: 42.364755, lng: -71.256868},{lat: 42.367233, lng: -71.256068},{lat: 42.368144, lng: -71.261464},{lat: 42.359891, lng: -71.259101},{lat: 42.362553, lng: -71.262138},{lat: 42.366650, lng: -71.261902},{lat: 42.368739, lng: -71.256220},{lat: 42.369035, lng: -71.258007},{lat: 42.370094, lng: -71.255686},{lat: 42.365978, lng: -71.261462},{lat: 42.368985, lng: -71.259378},{lat: 42.366450, lng: -71.255926},{lat: 42.363142, lng: -71.262548},{lat: 42.364064, lng: -71.262737},{lat: 42.370400, lng: -71.258725}];
+	var parking_names = ["Administration Lot", "Admissions Lot", "Athletics Lot (Yellow)", "Castle Lot (Blue)", "Chapels Lot (Yellow)", "Charles River Lot (Green)", "Epstein Lot (Purple)", "Hassenfeld Lot (Yellow)", "Kutz Lot (Blue)", "Library Lot (Blue)", "North Lot (Blue)", "Rose Lot", "Schneider Lot (Blue)", "Science Lot (Purple)", "South Residence Lot (Green)", "Theater Lot (Yellow)", "Tower Lot (Blue)"];
+	for(var i = 0; i < parking_names.length; i ++){
+		var parking_marker = new google.maps.Marker({
+			position: parking_coordinates[i],
+	   		icon: p_icon,
+	   		map: mapHandler,
+	   		title: parking_names[i]
+	 	});
+	 	parking_markers.push(parking_marker);
+	}
+	initCoffeebar();
+}
+
+function concatLabel(title, destination) {
+	var ret = '<div id="content"><a>' + title +
+	'</a><form action="/welcome/search" method="get" data-remote="true"><input name="start" type="hidden" value=""><input name="end" type="hidden" value="'
+	+ destination + '"><button type="submit">Direction to</button></form></div>';
+	return ret;
+}
+
+function initCoffeebar() {
+	var content_lib_coffee = concatLabel("Library Coffee bar!", "library");
+     var infowindow_lib_coffee = new google.maps.InfoWindow({
+       content: content_lib_coffee
+     });
+     var lib_coffee_marker = new google.maps.Marker({
+       position: {lat: 42.368033, lng: -71.258537},//library
+       map: mapHandler,
+       icon: "<%= image_url('coffee-icon.png') %>",
+       title: 'library coffee bar'
+     });
+     lib_coffee_marker.addListener('click', function() {
+       infowindow_lib_coffee.open(mapHandler, lib_coffee_marker);
+       setTimeout(function(){infowindow_lib_coffee.close();}, '3000');
+     });
+
+     var content_shapiro = concatLabel("Einstein bros here!", "scc");
+     var infowindow_shapiro = new google.maps.InfoWindow({
+       content: content_shapiro
+     });
+     var shapiro_marker = new google.maps.Marker({
+       position: {lat: 42.365825, lng: -71.260102},//shapiro
+       map: mapHandler,
+       icon: "<%= image_url('coffee-icon.png') %>",//coffeeADS
+       title: 'shapiro coffee'
+     });
+     shapiro_marker.addListener('click', function() {
+       infowindow_shapiro.open(mapHandler, shapiro_marker);
+       setTimeout(function(){infowindow_shapiro.close();}, '3000');
+     });
+}
+
+function buildPath(coordsArr) {
+	var lineSymbol = {
+		path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+		scale: 4,
+		strokeColor: '#393',
+		fillColor: '#00FF00',
+		fillOpacity: 1.0,
+	};
+	line = new google.maps.Polyline({
+		path: coordsArr,
+		strokeColor: '#006400',
+		strokeOpacity: 0.5,
+		icons: [{
+			icon: lineSymbol,
+			offset: '100%'
+		}],
+		map: mapHandler,
+	});
+	if(coordsArr.length > 1){
+		showSendEmail();
+		var image_end = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+		var image_start = 'https://mt.googleapis.com/vt/icon/name=icons/onion/22-blue-dot.png&scale=1.0';
+		var start_loc = new google.maps.Marker({
+			position: coordsArr[0],
+			map: mapHandler,
+			icon: image_start,
+			animation: google.maps.Animation.DROP
+		});
+		var destination_loc = new google.maps.Marker({
+			position: coordsArr[coordsArr.length - 1],
+			map: mapHandler,
+			icon: image_end,
+			animation: google.maps.Animation.DROP
+		});
+		markers.push(start_loc);
+		markers.push(destination_loc);
+	}
+	animateCircle(line)
+}
+
+function animateCircle(line) {
+	var count = 0;
+	window.setInterval(function() {
+		count = (count + 1) % 200;
+
+		var icons = line.get('icons');
+		icons[0].offset = (count / 2) + '%';
+		line.set('icons', icons);
+	}, 20);
+}
+
+function setGeoCookie(position) {
+	var cookie_val = position.coords.latitude + "|" + position.coords.longitude;
+	document.cookie = "lat_lng=" + escape(cookie_val);
+}
+
+function showCurrPosOnMap(position){
+	var lat = position.coords.latitude;
+	var lng = position.coords.longitude;
+	var user_icon = {
+		url: "<%= image_url('user-map-icon.png') %>",
+		scaledSize: new google.maps.Size(35, 35),
+		origin: new google.maps.Point(0, 0),
+		anchor: new google.maps.Point(10, 10)
+	};
+	var infowindow =  new google.maps.InfoWindow({
+		content: 'You are here!',
+		map: mapHandler
+	});
+	var marker = new google.maps.Marker({
+		position: new google.maps.LatLng(lat, lng),
+		map: mapHandler,
+		animation: google.maps.Animation.DROP,
+		icon: user_icon
+	});
+	infowindow.open(mapHandler, marker);
+	setTimeout(function(){infowindow.close();}, '3000');
+}
+
+function reloadMap() {
+	mapHandler.setCenter(new google.maps.LatLng(42.366426, -71.258601));
+	line.setMap(null);
+	for(i = 0; i < markers.length; i++) {
+		markers[i].setMap(null);
+	}
+}
+
+function showSendEmail(){
+	if(nodes.length > 0 && document.getElementById("emailSend") != null){
+		 document.getElementById("emailSend").className = "enabled";
+		 document.getElementById("sendEmailLink").setAttribute("data-toggle", "modal");
+		 document.getElementById("sendEmailLink").setAttribute("data-target", "#sendEmail");
+		 document.getElementById("sendEmailLink").setAttribute("href", "#sendEmail");
+	}
+}
