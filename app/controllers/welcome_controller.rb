@@ -28,7 +28,6 @@ class WelcomeController < ApplicationController
 					start_id = (Building.where(name: params[:start]))[0].id.to_i
 				else
 					lat_lng = cookies[:lat_lng].split("|")
-					print ";;;;;;;;;;;;;;;;;", lat_lng
 					start_id = WelcomeHelper.nearest_building_id(lat_lng)
 					@result.push(lat_lng)
 				end
@@ -41,11 +40,9 @@ class WelcomeController < ApplicationController
 						nodetype = 4
 					end
 					destination_list = Node.where(nodetype: nodetype).pluck(:id)
-					print "!!!!!!!!!!!!!!", destination_list
 					distMin = Float::INFINITY
 					destination_list.each do |d_id|
 						path_temp, strs_temp, dist = WelcomeHelper.find_route(start_id, d_id)
-						print "&&&&&&&&&&&&&&&", dist
 						if dist < distMin
 							distMin = dist
 							end_id = d_id

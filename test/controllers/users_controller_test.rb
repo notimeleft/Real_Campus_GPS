@@ -5,12 +5,6 @@ class UsersControllerTest < ActionController::TestCase
     @user = users(:one)
   end
 
-  test "should get index" do
-    get :index
-    assert_response :redirect
-    assert_nil assigns(:users)
-  end
-
   test "should get new" do
     get :new
     assert_response :success
@@ -18,7 +12,7 @@ class UsersControllerTest < ActionController::TestCase
 
   test "should create user" do
     assert_difference('User.count') do
-      post :create, user: { name: 'hehe', email: 'sh@hotmail.com' , password: 'secret', password_confirmation: 'secret' }
+      post :create, name: 'hehehe', email: 'shsh@hotmail.com' , password: 'secret', password_confirmation: 'secret'
     end
 
     assert_redirected_to root_url
@@ -35,8 +29,8 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should update user" do
-    patch :update, id: @user, user: { name: 'hehe', email: 'sh@hotmail.com', password: 'secret', password_confirmation: 'secret' }
-    assert_redirected_to users_url
+    patch :update, id: @user, name: 'hehe', email: 'sh@hotmail.com', password: 'secret', password_confirmation: 'secret'
+    assert_redirected_to users_path
   end
 
   test "should destroy user" do
