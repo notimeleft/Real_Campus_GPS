@@ -46,9 +46,9 @@ File.foreach('db/paths_to_string.txt') do |line|
   print _end
   print _description
   a = Path.where(start: _start.strip.to_i, end: _end.strip.to_i)[0]
-  if a == nil
-	  next
-  end
+  #if a == nil
+#	  next
+  #end
   a.description = (_description.strip)[1..-2]
   a.save
 end

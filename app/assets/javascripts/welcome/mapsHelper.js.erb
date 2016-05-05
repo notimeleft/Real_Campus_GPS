@@ -8,19 +8,20 @@ function initFacilities() {
 	var parking_coordinates = [{lat: 42.364964, lng: -71.260059},{lat: 42.364419, lng: -71.260027},{lat: 42.364755, lng: -71.256868},{lat: 42.367233, lng: -71.256068},{lat: 42.368144, lng: -71.261464},{lat: 42.359891, lng: -71.259101},{lat: 42.362553, lng: -71.262138},{lat: 42.366650, lng: -71.261902},{lat: 42.368739, lng: -71.256220},{lat: 42.369035, lng: -71.258007},{lat: 42.370094, lng: -71.255686},{lat: 42.365978, lng: -71.261462},{lat: 42.368985, lng: -71.259378},{lat: 42.366450, lng: -71.255926},{lat: 42.363142, lng: -71.262548},{lat: 42.364064, lng: -71.262737},{lat: 42.370400, lng: -71.258725}];
 	var parking_names = ["Administration Lot", "Admissions Lot", "Athletics Lot (Yellow)", "Castle Lot (Blue)", "Chapels Lot (Yellow)", "Charles River Lot (Green)", "Epstein Lot (Purple)", "Hassenfeld Lot (Yellow)", "Kutz Lot (Blue)", "Library Lot (Blue)", "North Lot (Blue)", "Rose Lot", "Schneider Lot (Blue)", "Science Lot (Purple)", "South Residence Lot (Green)", "Theater Lot (Yellow)", "Tower Lot (Blue)"];
 	for(var i = 0; i < parking_names.length; i ++){
-		initFacility(parking_names[i], parking_names[i], parking_coordinates[i], p_icon);
+		initFacility(parking_names[i], parking_names[i], parking_coordinates[i], p_icon, "");
 	}
 	var coffee_icon = {url: "<%= image_url('coffee-icon.png') %>"};
 	var coffee_coordinates = [{lat: 42.365733, lng: -71.260185}, {lat: 42.369694, lng: -71.258230}, {lat: 42.369188, lng: -71.258832}, {lat: 42.367851, lng: -71.258439}, {lat: 42.363144, lng: -71.260408}, {lat: 42.366088, lng: -71.257885}];
 	var coffee_names = ["Einstein Bros. Bagels", "Quad Cafe", "Heller-Brown Cafe", "Farber-Library Cafe", "Village Cafe", "Peet's Coffee and Tea"]
 	for(var i = 0; i < coffee_names.length; i ++){
-		initFacility(coffee_names[i], coffee_names[i], coffee_coordinates[i], coffee_icon);
+		initFacility(coffee_names[i], coffee_names[i], coffee_coordinates[i], coffee_icon, "");
 	}
 	var dining_icon = {url: "<%= image_url('dining-icon.png') %>"};
 	var dining_coordinates = [{lat: 42.366574, lng: -71.260501}, {lat: 42.368150, lng: -71.257176}, {lat: 42.365978, lng: -71.261122}, {lat: 42.366398, lng: -71.260733}];
 	var dining_names = ["Sherman", "Usdan", "Faculty Club", "The Stein"];
+	var dining_imgs = ["<%= image_url('sherman-img.jpg') %>", "<%= image_url('usdan-img.jpg') %>", "", "<%= image_url('sherman-img.jpg') %>"];
 	for(var i = 0; i < dining_names.length; i ++){
-		initFacility(dining_names[i], dining_names[i], dining_coordinates[i], dining_icon);
+		initFacility(dining_names[i], dining_names[i], dining_coordinates[i], dining_icon, dining_imgs[i]);
 	}
 	var athletics_icon = {url: "<%= image_url('athletics-icon.png') %>",
 		scaledSize: new google.maps.Size(25, 25), // scaled size
@@ -30,22 +31,28 @@ function initFacilities() {
 	var athletics_coordinates = [{lat: 42.365179, lng: -71.255604}, {lat: 42.362368, lng: -71.258968}, {lat: 42.363977, lng: -71.256273}, {lat: 42.364545, lng: -71.253718}, {lat: 42.363232, lng: -71.260269}];
 	var athletics_names = ["Gosman Sports and Convocation Center", "Gordon Field (soccer)", "Marcus Field (baseball)", "Rieger Tennis Courts", "Village Fitness center"];
 	for(var i = 0; i < athletics_names.length; i ++){
-		initFacility(athletics_names[i], athletics_names[i], athletics_coordinates[i], athletics_icon);
+		initFacility(athletics_names[i], athletics_names[i], athletics_coordinates[i], athletics_icon, "");
 	}
 	var library_icon = {url: "<%= image_url('library-icon.png') %>"};
-	initFacility("library", "library", {lat: 42.368349, lng: -71.258041}, library_icon);
-	initFacility("gzang", "gzang", {lat: 42.366944, lng: -71.258361}, library_icon);
+	initFacility("library", "library", {lat: 42.368349, lng: -71.258041}, library_icon, "<%= image_url('library-img.png') %>");
+	initFacility("gzang", "gzang", {lat: 42.366944, lng: -71.258361}, library_icon, "");
 }
 
-function concatLabel(title, destination) {
-	var ret = '<div id="content"><a>' + title +
-	'</a><form action="/welcome/search" method="get" data-remote="true"><input name="start" type="hidden" value=""><input name="end" type="hidden" value="'
+function concatLabel(title, destination, image_url) {
+	var image_section;
+	if(image_url == "") {
+		image_section = '';
+	} else {
+		image_section = '<div style="padding-bottom:5px;"><img src="' + image_url + '" style="width:100px;height:100px;"></div>';
+	}
+	var ret = '<div id="content"><a>' + title + '</a>' + image_section +
+	'<form action="/welcome/search" method="get" data-remote="true"><input name="start" type="hidden" value=""><input name="end" type="hidden" value="'
 	+ destination + '"><button type="submit">Direction to</button></form></div>';
 	return ret;
 }
 
-function initFacility(title, name, coordinate, icon_var) {
-	var content_coffee = concatLabel(title, name);
+function initFacility(title, name, coordinate, icon_var, image_url) {
+	var content_coffee = concatLabel(title, name, image_url);
      var infowindow_coffee = new google.maps.InfoWindow({
        content: content_coffee
      });
@@ -57,7 +64,7 @@ function initFacility(title, name, coordinate, icon_var) {
      });
      coffee_marker.addListener('click', function() {
        infowindow_coffee.open(mapHandler, coffee_marker);
-       setTimeout(function(){infowindow_coffee.close();}, '3000');
+       setTimeout(function(){infowindow_coffee.close();}, '5000');
      });
 }
 
@@ -82,20 +89,12 @@ function buildPath(coordsArr) {
 	if(coordsArr.length > 1){
 		showSendEmail();
 		var image_end = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-		var image_start = 'https://mt.googleapis.com/vt/icon/name=icons/onion/22-blue-dot.png&scale=1.0';
-		var start_loc = new google.maps.Marker({
-			position: coordsArr[0],
-			map: mapHandler,
-			icon: image_start,
-			animation: google.maps.Animation.DROP
-		});
 		var destination_loc = new google.maps.Marker({
 			position: coordsArr[coordsArr.length - 1],
 			map: mapHandler,
 			icon: image_end,
 			animation: google.maps.Animation.DROP
 		});
-		markers.push(start_loc);
 		markers.push(destination_loc);
 	}
 	animateCircle(line)
