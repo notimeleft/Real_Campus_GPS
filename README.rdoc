@@ -1,32 +1,51 @@
-== README
+Campus GPS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  How to use:
+    Visit www.CampusGPS.com and start searching! If your browser supports HTML5, please allow geolocation
 
 
-Please feel free to use a different markup language if you do not plan to run
+  Buildings covered:
+    Brandeis campus:
+    -lecture halls
+    -dining halls
+    -parking lots
+    -dormitories
+
+  Features:
+      -specify starting location, or let geolocation set current location as starting
+      -search for nearest point of interest
+      -clickable icons for specifying point of interest as end location
+
+      -mobile support: works on iphones (have yet to test on android smartphones). Enable location services for Safari!
+
+  Implementation:
+    -Dijkstra's shortest path algorithm generates route given building A and building B
+    -Haversine formula finds closest point of interest for user, shortest path generates path to closest point of interest
+
+  Technologies used:
+    -Google maps apis
+    
+  To Do:
+  	- Still a few bugs that need to be ironed out. It's functional but not perfect.
+  		- Some paths are not actually the shortest
+  		- Some paths don't generate a line of text for directions
+  	- Need to allow for multiple building entrances
+  	- Need to test on Android phones
+  	- Allow user profile to be more customizable
+
+
 <tt>rake doc:app</tt>.
 
 {<img src="https://codeclimate.com/github/drewbee736/Campus-GPS/badges/gpa.svg" />}[https://codeclimate.com/github/drewbee736/Campus-GPS]
 
-{<img src="https://codeship.com/projects/e2eac8b0-f52d-0133-409c-4261b5a2c26f/status?branch=master" alt="Status?branch=master" />}[https://codeship.com/projects/143118]
+{<img src="https://codeship.com/projects/1eccca60-d80e-0133-6949-022bc4c189a9/status?branch=master" alt="Status?branch=master" />}[https://codeship.com/projects/143118]
+
+{<img src="https://github.com/xihe92/Real_Campus_GPS/blob/master/lib/architecture.png" />}[https://github.com]
+
+{<img src="https://github.com/xihe92/Real_Campus_GPS/blob/master/lib/ss1.png" />}[https://github.com]
+
+{<img src="https://github.com/xihe92/Real_Campus_GPS/blob/master/lib/ss2.png" />}[https://github.com]
+
+{<img src="https://github.com/xihe92/Real_Campus_GPS/blob/master/lib/ss3.png" />}[https://github.com]
+
+
