@@ -1,7 +1,7 @@
 Campus GPS
 
   How to use:
-    Visit www.CampusGPS.com and start searching! If your browser supports HTML5, please allow geolocation
+    Visit www.CampusGPS.com and start searching! Key note: please use Safari as your browser for easier geolocation. If your browser supports HTML5, please allow geolocation. 
 
 
   Buildings covered:
